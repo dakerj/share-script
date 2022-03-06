@@ -2,6 +2,7 @@ import json
 import os
 import re
 import shutil
+import sys
 import uuid
 import winreg
 from datetime import datetime
@@ -187,7 +188,7 @@ def getDirName(name, CLASS):
 
 if __name__ == "__main__":
     print('开始进行桌面自动归档（作者：uyume 版本：0.0.1）...')
-    classifyFiles("config.json")
+    classifyFiles(os.path.join(os.path.dirname(sys.argv[0]), "config.json"))
     print('配置加载信息为：', CONFIG)
     fileInfo = readFiles()
     print('读取桌面欲整理信息为：', fileInfo)
