@@ -1,13 +1,13 @@
 {
  "EN_TIME_CLASS": 1,
  "EN_DIR_CLASS": 1,
- "CLASS_DIR": "F:\\word",
+ "CLASS_DIR": "G:\\归档",
  "FILE_CLASS_TYPE": "(?=^.*[^\\.lnk]$)(?=[^desktop.ini])",
  "FILE_CLASS": {
-  "word": ".*\\.docx|.*\\.doc",
   "office\\word": ".*\\.docx|.*\\.doc",
-  "office\\excel": ".*\\.xlsx|.*\\.xls"
+  "office\\excel": ".*\\.xlsx|.*\\.xls",
+  "QQ截图": "^QQ截图.*\\.png$"
  },
  "DIR_CLASS_TYPE": "\\.*",
- "DIR_CLASS": {"word\\www": "\\.*"}
+ "DIR_CLASS": {"dirs": "\\.*"}
 }
